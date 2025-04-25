@@ -17,6 +17,8 @@ WORKDIR /app
 COPY --from=builder /workspace/app/target/*.jar app.jar
 
 EXPOSE 8080
+ENV SERVER_PORT=8080
+ENV SERVER_ADDRESS=0.0.0.0
 ENV JAVA_OPTS="-Xmx512m -Xms256m -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0"
 
 ENTRYPOINT ["sh", "-c", "exec java $JAVA_OPTS -jar /app/app.jar"]
