@@ -1,0 +1,21 @@
+{"properties": [
+  {
+    "name": "image.allowed-extensions",
+    "type": "java.lang.String",
+    "description": "A description for 'image.allowed-extensions'"
+  },
+  {
+    "name": "image.upload-dir",
+    "type": "java.lang.String",
+    "description": "A description for 'image.upload-dir'"
+  },
+  {
+    "name": "image.max-size",
+    "type": "java.lang.String",
+    "description": "A description for 'image.max-size'"
+  },
+  {
+    "name": "service.utilisateur.url",
+    "type": "java.lang.String"
+  }
+]}
